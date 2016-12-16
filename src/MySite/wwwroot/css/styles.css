@@ -1,0 +1,75 @@
+﻿@import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
+
+
+body {
+  font-family: 'Hind';
+	height: 100%;
+}
+
+container {
+	display: block;
+}
+
+
+
+/* Beginning of navigation styling */
+
+
+.navbar {
+  background: #123857;
+  padding: 25px;
+  font-size: 1.8rem;
+	border-width: 0;
+}
+
+
+.navbar-header.page-scroll a {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.navbar-header.page-scroll a:hover {
+  color: #ee2f72;
+}
+
+.nav.navbar-nav.navbar-right a {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nav.navbar-nav.navbar-right a:hover {
+  color: #ee2f72;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #123857;
+}
+
+.navbar-default .navbar-toggle.collapse .navbar-collapse.collapse {
+  background-color: #123857;
+}
+
+/* End of Navigation Style */
+
+/*Beginning of header styling*/
+#myBio {
+	text-align: center;
+  top: 200px;
+}
+
+.img-responsive {
+	height: 250px;
+	width: 250px;
+	position: relative;
+  left: 50%;
+	overflow: hidden;
+  margin-left: -125px
+}
+
+
+
