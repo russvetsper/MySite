@@ -198,4 +198,5 @@
 --resource:"C:\Users\russ\Desktop\MySite\src\MySite\obj\Debug\netcoreapp1.0\MySitedotnet-compile.deps.json",MySite.deps.json
 C:\Users\russ\Desktop\MySite\src\MySite\Program.cs
 C:\Users\russ\Desktop\MySite\src\MySite\Startup.cs
+C:\Users\russ\Desktop\MySite\src\MySite\Controllers\AboutController.cs
 C:\Users\russ\Desktop\MySite\src\MySite\Controllers\HomeController.cs
