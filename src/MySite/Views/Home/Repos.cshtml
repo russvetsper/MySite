@@ -1,0 +1,25 @@
+﻿  @{  ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<br />
+<br />
+<hr />
+
+@model IEnumerable<MySite.Models.Repo>
+
+<div class="jombotron">/
+<ul>
+    @foreach (var Repo in Model.Take(3))
+    {
+        
+        <li>
+
+       <h2>  @Html.DisplayFor(modelItem => Repo.Name)
+         @Html.DisplayFor(modelItem => Repo.Stargazers_count)
+        </h2>    
+        </li>
+
+        
+    }
+  </ul> 
+    </div>     
