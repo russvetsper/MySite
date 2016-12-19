@@ -7,6 +7,6 @@ namespace MySite.Models
 {
     public class EnvironmentVariables
     {
-        public static string AuthToken = "2f0fdef3cbece0913d17afa57d8b6ae8629ba725";
+        public static string AuthToken = "409e3bd657ebf31e7cb8cf506f03955915e25014 ";
     }
 }

@@ -212,7 +212,7 @@
 C:\Users\russ\Desktop\MySite\src\MySite\Program.cs
 C:\Users\russ\Desktop\MySite\src\MySite\Startup.cs
 C:\Users\russ\Desktop\MySite\src\MySite\Controllers\AboutController.cs
-C:\Users\russ\Desktop\MySite\src\MySite\Controllers\GitStarController.cs
 C:\Users\russ\Desktop\MySite\src\MySite\Controllers\HomeController.cs
+C:\Users\russ\Desktop\MySite\src\MySite\Controllers\RepoController.cs
 C:\Users\russ\Desktop\MySite\src\MySite\Models\EnvironmentVariables.cs
-C:\Users\russ\Desktop\MySite\src\MySite\Models\GitStar.cs
+C:\Users\russ\Desktop\MySite\src\MySite\Models\Repo.cs

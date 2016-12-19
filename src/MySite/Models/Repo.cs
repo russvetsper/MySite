@@ -1,34 +1,29 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using RestSharp;
+using RestSharp.Authenticators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using RestSharp;
-using RestSharp.Authenticators;
 
 namespace MySite.Models
 {
-    public class GitStar
+    public class Repo
     {
         public string Name { get; set; }
-        public string Stargazers_count { get; set;
-        }
-        public static List<GitStar> GetRepos()
+        public string Stargazers_count { get; set; }
+
+
+        public static List<Repo> GetRepos()
         {
             
             var client = new RestClient("https://api.github.com/search/repositories?page=1&q=user:russvetsper&sort=stars:>0&order=desc");
-           
             var request = new RestRequest("", Method.GET);
-            
             request.AddParameter("Access_token", EnvironmentVariables.AuthToken);
             request.AddHeader("User-Agent", "russvetsper");
-            
             request.AddHeader("Accept", "application/vnd.github.v3.text-match+json");
-           
             client.Authenticator = new HttpBasicAuthenticator("/Itmes.json", EnvironmentVariables.AuthToken);
-        
-
             var response = new RestResponse();
             Task.Run(async () =>
             {
@@ -37,10 +32,11 @@ namespace MySite.Models
 
             
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
-            var repoList = JsonConvert.DeserializeObject<List<GitStar>>(jsonResponse["items"].ToString());
+            var repoList = JsonConvert.DeserializeObject<List<Repo>>(jsonResponse["items"].ToString());
             return repoList;
+
         }
-        
+       
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
         {
             var tcs = new TaskCompletionSource<IRestResponse>();

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MySite.Models.Repo>
+
+<ol>
+    @foreach (var repo in Model)
+    {
+        <li class="jumbotron">
+
+
+            <h2>@Html.DisplayFor(modelItem => repo.Name) @Html.DisplayFor(modelItem => repo.Stargazers_count)</h2>
+
+
+        </li>
+    }
+</ol>

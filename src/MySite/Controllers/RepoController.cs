@@ -10,7 +10,7 @@ using MySite.Models;
 
 namespace MySite.Controllers
 {
-    public class GitStarController : Controller
+    public class RepoController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()
@@ -19,7 +19,7 @@ namespace MySite.Controllers
         }
         public IActionResult GetRepos()
         {
-            var repoList = GitStar.GetRepos();
+            var repoList = Repo.GetRepos();
             return View(repoList);
         }
     }
