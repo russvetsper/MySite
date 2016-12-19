@@ -7,12 +7,12 @@ body {
 }
 
 container {
-	display: block;
+	display: ;
 }
 
 
 
-/* Beginning of navigation styling */
+
 
 
 .navbar {
@@ -22,47 +22,17 @@ container {
 	border-width: 0;
 }
 
+ 409e3bd657ebf31e7cb8cf506f03955915e25014
 
-.navbar-header.page-scroll a {
-  color: white;
-  font-size: 4rem;
-  letter-spacing: 3px;
-}
 
-.navbar-header.page-scroll a:hover {
-  color: #ee2f72;
-}
 
-.nav.navbar-nav.navbar-right a {
-  color: white;
-  letter-spacing: 1px;
-}
 
-.nav.navbar-nav.navbar-right a:hover {
-  color: #ee2f72;
-}
 
-.navbar-default .navbar-toggle .icon-bar{
-  background-color: white;
-}
 
-.navbar-default .navbar-toggle:hover {
-  background-color: #123857;
-}
 
-.navbar-default .navbar-toggle.collapse .navbar-collapse.collapse {
-  background-color: #123857;
-}
 
-/* End of Navigation Style */
 
-/*Beginning of header styling*/
-#myBio {
-	text-align: center;
-  top: 200px;
-}
-
-.img-responsive {
+.img {
 	height: 250px;
 	width: 250px;
 	position: relative;
